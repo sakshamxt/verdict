@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0f172a; /* slate-900 */
+  --color-secondary: #1e293b; /* slate-800 */
+  --color-accent: #06b6d4; /* cyan-500 */
+  --color-accent-hover: #22d3ee; /* cyan-400 */
+  --color-text-primary: #f1f5f9; /* slate-100 */
+  --color-text-secondary: #cbd5e1; /* slate-300 */
+  --color-border-color: #334155; /* slate-700 */
+  --color-danger: #ef4444; /* red-500 */
+  --color-danger-hover: #f87171; /* red-400 */
+  --color-success: #22c55e; /* green-500 */
+}
+
+
+/* Custom global styles (if any) */
+body {
+  @apply bg-primary text-text-primary antialiased; /* Apply base background and text color */
+  font-family: 'Inter', sans-serif; /* Ensure font is applied */
+}
+
+/* Example of a custom component utility if needed */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  @apply bg-slate-700 rounded-md;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  @apply bg-accent rounded-md;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  @apply bg-accent-hover;
+}
+
+/* For react-hook-form error messages */
+.error-message {
+  @apply text-red-400 text-sm mt-1;
+}
