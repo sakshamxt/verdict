@@ -1,4 +1,4 @@
-import User from '../models/User.js';
+import User from '../models/user.model.js';
 import dotenv from 'dotenv';
 
 dotenv.config({ path: '../.env' }); // Adjust path if seeder is run from a different directory
@@ -16,9 +16,9 @@ const seedAdminUser = async () => {
         password: process.env.ADMIN_PASSWORD, // Password will be hashed by pre-save hook
         role: 'admin',
       });
-      console.log('🔑 Admin user created successfully!'.blue.inverse);
+      console.log('🔑 Admin user created successfully!');
     } else {
-      console.log('ℹ️ Admin user already exists.'.blue);
+      console.log('ℹ️ Admin user already exists.');
     }
   } catch (error) {
     console.error(`Error seeding admin user: ${error.message}`.red);
