@@ -24,7 +24,7 @@ const Navbar = () => {
           {/* Logo/Brand */}
           <Link to="/" className="flex items-center space-x-2 text-accent hover:text-accent-hover transition-colors">
             <FilmIcon className="h-8 w-8" />
-            <span className="font-bold text-xl text-text-primary">MovieVerse</span>
+            <span className="font-bold text-xl text-text-primary">Verdict</span>
           </Link>
 
           {/* Desktop Navigation Links */}
